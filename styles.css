@@ -32,10 +32,19 @@ div {
     width: 180px;
     padding: 0;
     border: 1px solid black;
+    flex-shrink: 0;
 }
 
-#con-info {
+.info {
     height: 180px;
+}
+
+info:first-child{
+    min-width: 380px;
+    flex-basis: 380px;
+}
+.info:last-child{
+    flex-shrink: 2;
 }
 
 #navbar {
