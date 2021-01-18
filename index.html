@@ -1,50 +1,164 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Live Resume</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div id="header">
-            <div id="portrait"><p>Picture</p></div>
-            <div class="info">
-                <h1>Shahm Barmada</h1>
-                <p><strong>Accountant, IT, & Junior Web Developer</strong><br>27 years old, born on 1993 in Aleppo, Syria. Living in Egypt since 2019.<br>Interested in Business informatics & Software development</p>
-            </div>
-            <div class="info">
-                <h3>Contact Information</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias vel accusantium, ullam pariatur neque hic quo molestias cupiditate libero illo, sequi, deserunt repellendus eveniet saepe quos fugiat explicabo ratione consectetur.</p>
+
+<head>
+    <title>Live Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/597107295a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="portrait">
+            <img src="src/portrait.png" alt="Portrait" style="max-height: 100% ;max-width: 100% ;object-fit:contain;">
+        </div>
+        <div class="info">
+            <h1>Shahm Barmada</h1>
+            <p><strong>Accountant, IT, & Junior Web Developer</strong><br>Interested in Business informatics & Software
+                development</p>
+        </div>
+        <div class="info">
+            <h3>Contact Information</h3>
+            <div id="contact-info">
+                <a href="mailto:barmada.sha@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/shosbrmd/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.facebook.com/shahm.barmada"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/BarmadaShahm"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://join.skype.com/invite/jGJUoI5fbVzY"><i class="fab fa-skype"></i> Skype</a>
+                <a href="https://t.me/ShahmBarmada"><i class="fab fa-telegram"></i> Telegram</a>
+                <a href="https://github.com/ShahmBarmada"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
-        <div id="navbar">
-            <a href="#">Cotact Information</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Projects & Researches</a>
-            <a href="#">Skills</a>
-            <a href="#">References</a>
-            <a>Tick Option</a>
-        </div>
+    </div>
+    <div id="navbar">
+        <a href="#header">Cotact Information</a>
+        <a href="#sc-Education">Education</a>
+        <a href="#sc-Experience">Experience</a>
+        <a href="#sc-Researches">Researches</a>
+        <a href="#sc-Projects">Projects</a>
+        <a href="#sc-Skills">Skills</a>
+        <a href="#sc-References">References</a>
+        <a>Tick Option</a>
+    </div>
+    <div id="container-frame">
         <div id="container">
-            <div class="sub-container">
-                <h3>Education</h3>
+            <div id="button-top"><i class="fas fa-angle-up"></i>
+                <p>previos</p><i class="fas fa-angle-up"></i>
             </div>
-            <div class="sub-container">
-                <h3>Experience</h3>
+            <div class="sub-container" id="sc-Education">
+                <h2 class="sc-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                <h4 class="sc-content1">2020<br>~<br>2021</h4>
+                <h4 class="sc-content2">2013<br>~<br>2018</h4>
+                <article class="sc-content1">
+                    <p>IIMBx - edX (Online)</p>
+                    <p>Accounting and Finance Course (Ref: AC104x) <br> Course topics: budgeting, financial & Costs
+                        analysis.</p>
+                </article>
+                <article class="sc-content2">
+                    <p>Damascus University, Faculty of Economics - Bachelor Degree</p>
+                    <p>Minor: Economical Sciences <br> Major: Business Administration</p>
+                </article>
             </div>
-            <div class="sub-container">
-                <h3>Projects & Researches</h3>
+            <div class="sub-container" id="sc-Experience">
+                <h2 class="sc-title"><i class="fas fa-briefcase"></i> Experience</h2>
+                <h4 class="sc-content1">2019/Jan<br>~<br>2020/Dec</h4>
+                <h4 class="sc-content2">2015/Jan<br>~<br>2018/Oct</h4>
+                <h4 class="sc-content3">2013/Jan<br>~<br>2014/Dec</h4>
+                <h4 class="sc-content4"></h4>
+                <article class="sc-content1">
+                    <p>Kabbani Furniture</p>
+                    <p>Starting Position: General Accountant <br> Ending Position: Treasury Accountant</p>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Maintain, process & archive clients & vendors accounts (Reconciliations, Invoices).</li>
+                        <li>Generate financial & stock reports.</li>
+                        <li>Supply chain management & quantities estimation.</li>
+                        <li>Handle treasury operations, cash & journals.</li>
+                        <li>Assist in monthly & yearly closing.</li>
+                    </ul>
+                    <p>Achievements:</p>
+                    <ul>
+                        <li>Developed an Excel extension to automate daily & repetitive tasks (reduced taskprocess
+                            duration from average 5min to approximate 30sec).</li>
+                        <li>Made a browser extension to improve UI space usage in OdooERP.</li>
+                    </ul>
+                </article>
+                <article class="sc-content2">
+                    <p>LAST Group</p>
+                    <p>Starting Position: IT officer <br> Ending Position: Project Administrator</p>
+                    <p>Project Briefing:</p>
+                    <p>“Multipurpose Scoreboards Project”: <br> Installation & maintenance of multiple multipur-pose
+                        scoreboards in different sports complexes in order to hand over the scoreboardsystems to the
+                        concerned party.</p>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Plan the project process, define time-lines and commit to them.</li>
+                        <li>Administrate the installation & maintenance process / progress.</li>
+                        <li>Search for & supply solutions to fix systems technical problems.</li>
+                        <li>Train & supervise the project staff.</li>
+                    </ul>
+                    <p>Achievements:</p>
+                    <ul>
+                        <li>Outsourced the circuit board maintenance process depending on local market, reduced
+                            maintenance financial costs & required time by over 50%.</li>
+                    </ul>
+                </article>
+                <article class="sc-content3">
+                    <p>Al-Anwar Estalishment</p>
+                    <p>Position: Copy Editor \ EN‹›AR Translator</p>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Maintain formation & audit texts to achieve flawless & typos-free material.</li>
+                        <li>Draw & create diagrams and plots to preview ideas in texts.</li>
+                    </ul>
+                </article>
+                <article class="sc-content4">
+                    <p>Previous Experience</p>
+                    <ul>
+                        <li>Freelance research writer \ editor.</li>
+                        <li>Designer.</li>
+                    </ul>
+                </article>
             </div>
-            <div class="sub-container">
-                <h3>Skills</h3>
+            <div class="sub-container" id="sc-Researches">
+                <h2 class="sc-title"><i class="fas fa-file-alt"></i> Researches</h2>
+                <h4 class="sc-content1">2019/Jun</h4>
+                <h4 class="sc-content2">2018/May</h4>
+                <h4 class="sc-content3">2016/Jun</h4>
+                <article class="sc-content1">
+                    <p>Producing Steam Using Solar Power for Industrial Process</p>
+                    <p>Role: Writer (partial) \ Editor <br> Type: Freelance, Arabic</p>
+                    <p>Description:<br>Consists of 6 chapters (80 pgs), includes steam generators study, solar
+                        powerstudies, case study and application, calculations, and recommendations.</p>
+                </article>
+                <article class="sc-content2">
+                    <p>Linear Programming Role in Costs Decision-Making</p>
+                    <p>Role: Writer \ Editor <br> Type: Freelance, Arabic</p>
+                    <p>Description:<br>Consists of 4 chapters (60 pgs), includes linear programming development,
+                        theoretical thesis, case study of two methods (Graphical Method & Simplex Method), results
+                        comparison, and recommendations.</p>
+                </article>
+                <article class="sc-content3">
+                    <p>Electrical Study of a Hospital with Strong Current & Automation of Its’ Medical Records</p>
+                    <p>Role: Writer (partial) \ Editor <br> Type: Freelance, Arabic</p>
+                    <p>Description:<br>Graduation research, consists of 6 chapters (150 pgs), includes theoretical
+                        study, case study of hospital powering, electrical charts and calculations, records keeping
+                        development, integration of the records automation, and records system application.</p>
+                </article>
             </div>
-            <div class="sub-container">
-                <h3>References</h3>
+            <div id="button-bottom"><i class="fas fa-angle-down"></i>
+                <p>next</p><i class="fas fa-angle-down"></i>
             </div>
         </div>
-        <div id="footer">
-            <p>footer</p>
-        </div>
-    </body>
+    </div>
+    <div id="footer">
+        <p>footer</p>
+    </div>
+</body>
+
 </html>
