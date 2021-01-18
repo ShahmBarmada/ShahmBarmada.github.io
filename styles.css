@@ -113,7 +113,9 @@ div#contact-info a {
 
 .sub-container {
     display: grid;
-    grid: 70px auto auto auto auto auto / 100px auto;
+    /* grid: 70px auto auto auto auto auto / 100px auto; */
+    grid-template-columns: 100px auto;
+    grid-template-rows: 70px auto auto auto auto auto;
 }
 
 .sc-title {
