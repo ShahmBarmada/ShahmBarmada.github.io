@@ -170,6 +170,12 @@ article.sc-content4 {
     border-image: linear-gradient(to right, rgb(51, 51, 51), rgba(0, 0, 0, 0)) 1 0%;
 }
 
+ul {
+    list-style: square inside;
+    text-indent: -22px; /* key property */
+    margin-left: 20px; /* key property */
+}
+
 #footer {
     position: fixed;
     bottom: 0px;
