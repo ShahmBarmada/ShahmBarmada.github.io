@@ -36,19 +36,23 @@
         </div>
     </div>
     <div id="navbar">
-        <a href="#header">Cotact Information</a>
-        <a href="#sc-Education">Education</a>
-        <a href="#sc-Experience">Experience</a>
-        <a href="#sc-Researches">Researches</a>
-        <a href="#sc-Projects">Projects</a>
-        <a href="#sc-Skills">Skills</a>
-        <a href="#sc-References">References</a>
-        <a>Tick Option</a>
+        <a onclick="showSection(this.innerHTML)">Education</a>
+        <a onclick="showSection(this.innerHTML)">Experience</a>
+        <a onclick="showSection(this.innerHTML)">Researches</a>
+        <a onclick="showSection(this.innerHTML)">Projects</a>
+        <a onclick="showSection(this.innerHTML)">Skills</a>
+        <a onclick="showSection(this.innerHTML)">References</a>
+        <div>
+            <a><i class="fas fa-sun"></i></a>
+            <a><i class="fas fa-moon"></i></a>
+        </div>
     </div>
     <div id="container-frame">
         <div id="container">
-            <div id="button-top"><i class="fas fa-angle-up"></i>
-                <p>previos</p><i class="fas fa-angle-up"></i>
+            <div id="button-top">
+                <button id="btnPrevious" type="button" onclick="browserButton(this.id)">
+                    <p>previos</p>
+                </button>
             </div>
             <div class="sub-container" id="sc-Education">
                 <h2 class="sc-title"><i class="fas fa-graduation-cap"></i> Education</h2>
@@ -151,14 +155,44 @@
                         development, integration of the records automation, and records system application.</p>
                 </article>
             </div>
-            <div id="button-bottom"><i class="fas fa-angle-down"></i>
-                <p>next</p><i class="fas fa-angle-down"></i>
+            <div class="sub-container" id="sc-Projects">
+                <h2 class="sc-title"><i class="fas fa-window-restore"></i> Projects</h2>
+                <h4 class="sc-content1"></h4>
+                <h4 class="sc-content2"></h4>
+                <h4 class="sc-content3"></h4>
+                <article class="sc-content1"></article>
+                <article class="sc-content2"></article>
+                <article class="sc-content3"></article>
+            </div>
+            <div class="sub-container" id="sc-Skills">
+                <h2 class="sc-title"><i class="fas fa-tasks"></i> Skills</h2>
+                <h4 class="sc-content1"></h4>
+                <h4 class="sc-content2"></h4>
+                <h4 class="sc-content3"></h4>
+                <article class="sc-content1"></article>
+                <article class="sc-content2"></article>
+                <article class="sc-content3"></article>
+            </div>
+            <div class="sub-container" id="sc-References">
+                <h2 class="sc-title"><i class="fas fa-users"></i> References</h2>
+                <h4 class="sc-content1"></h4>
+                <h4 class="sc-content2"></h4>
+                <h4 class="sc-content3"></h4>
+                <article class="sc-content1"></article>
+                <article class="sc-content2"></article>
+                <article class="sc-content3"></article>
+            </div>
+            <div id="button-bottom">
+                <button id="btnNext" type="button" onclick="browserButton(this.id)">
+                    <p>next</p>
+                </button>
             </div>
         </div>
     </div>
     <div id="footer">
         <p>footer</p>
     </div>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

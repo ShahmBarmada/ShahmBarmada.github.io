@@ -27,7 +27,7 @@ div {
     flex-flow: row wrap;
     align-items: flex-start;
     min-height: 200px;
-    background-color: #d1c4e9;
+    background-color: lightskyblue;
     padding-top: 10px;
 }
 
@@ -73,7 +73,7 @@ div#contact-info a {
     text-align: center;
 }
 
-#navbar a:last-child {
+#navbar div {
     margin-left: auto;
 }
 
@@ -83,7 +83,7 @@ div#contact-info a {
 }
 
 #container-frame {
-    max-width: 1150px;
+    width: 1150px;
     display: flex;
     align-self: center;
     background-color: #eeeeee;
@@ -94,6 +94,7 @@ div#contact-info a {
 #container {
     display: flex;
     flex-flow: column nowrap;
+    width: 100%;
 }
 
 #button-top,
@@ -105,8 +106,7 @@ div#contact-info a {
     margin: 10px 0px;
 }
 
-#button-top p,
-#button-bottom p {
+button p {
     margin: 0%;
     padding: 0px 10px;
 }
@@ -116,6 +116,7 @@ div#contact-info a {
     /* grid: 70px auto auto auto auto auto / 100px auto; */
     grid-template-columns: 100px auto;
     grid-template-rows: 70px auto auto auto auto auto;
+    width: 100%;
 }
 
 .sc-title {
@@ -183,4 +184,12 @@ ul {
     bottom: 0px;
     width: 100%;
     background-color: #bcbcbc;
+}
+
+#sc-Education {
+    display: grid;
+}
+
+#sc-Experience, #sc-Researches, #sc-Projects, #sc-Skills, #sc-References {
+    display: none;
 }
