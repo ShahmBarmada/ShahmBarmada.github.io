@@ -15,7 +15,7 @@
 <body>
     <div id="header">
         <div id="portrait">
-            <img src="src/portrait.png" alt="Portrait" style="max-height: 100% ;max-width: 100% ;object-fit:contain;">
+            <img src="src/portrait.png" alt="Portrait">
         </div>
         <div class="info">
             <h1>Shahm Barmada</h1>
@@ -36,15 +36,15 @@
         </div>
     </div>
     <div id="navbar">
-        <a onclick="showSection(this.innerHTML)">Education</a>
+        <a onclick="showSection(this.innerHTML)" class="active">Education</a>
         <a onclick="showSection(this.innerHTML)">Experience</a>
         <a onclick="showSection(this.innerHTML)">Researches</a>
         <a onclick="showSection(this.innerHTML)">Projects</a>
         <a onclick="showSection(this.innerHTML)">Skills</a>
         <a onclick="showSection(this.innerHTML)">References</a>
         <div>
-            <a><i class="fas fa-sun"></i></a>
-            <a><i class="fas fa-moon"></i></a>
+            <a id="btnLight" onclick="lightTheme()"><i class="fas fa-sun"></i></a>
+            <a id="btnDark" onclick="darkTheme()"><i class="fas fa-moon"></i></a>
         </div>
     </div>
     <div id="container-frame">
